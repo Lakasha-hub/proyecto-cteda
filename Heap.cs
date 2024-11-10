@@ -12,7 +12,7 @@ namespace tpfinal
         }
 
         //Devuelve el indice del Padre de un Proceso
-        protected int GetIndexPadre(int index) { return index / 2; }
+        protected int GetIndexPadre(int index) { return (index - 1) / 2; }
 
         //Devuelve el indice del Hijo Izquierdo de un Proceso
         protected int GetIndexHijoIzq(int index) { return index * 2 + 1; }

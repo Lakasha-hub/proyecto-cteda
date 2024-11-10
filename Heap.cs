@@ -27,7 +27,7 @@ namespace tpfinal
         public bool EsVacia() => heap.Count == 0;
 
         //Verifica si el proceso es Hoja
-        public bool EsHoja(int index) { return NivelProceso(index) == Altura(); }
+        public bool EsHoja(int index) { return GetIndexHijoIzq(index) >= heap.Count; }
 
         //Calcula altura de la heap
         public int Altura() { return (int)Math.Floor(Math.Log2(heap.Count)); }

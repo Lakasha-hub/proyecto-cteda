@@ -23,13 +23,13 @@ namespace tpfinal
             List<Proceso> listaSJF = minHeap.ListaHojas();
             List<Proceso> listaPPCSA = maxHeap.ListaHojas();
 
-            string resutl = "Procesos Hojas (SJF): \n";
+            string resutl = "------------------------ Procesos Hojas (SJF): ------------------------\n";
             foreach (Proceso p in listaSJF)
             {
                 resutl += p.ToString() + "\n";
             }
 
-            resutl += "Procesos Hojas (PPCSA): \n";
+            resutl += "------------------------ Procesos Hojas (PPCSA): ------------------------\n";
             foreach (Proceso p in listaPPCSA)
             {
                 resutl += p.ToString() + "\n";
@@ -72,10 +72,10 @@ namespace tpfinal
                 maxHeap.Agregar(p);
             }
 
-            string resutl = "Procesos (SJF): \n";
+            string resutl = "------------------------ Procesos (SJF): ------------------------\n";
             resutl += minHeap.ToStr();
 
-            resutl += "Procesos (PPCSA): \n";
+            resutl += "------------------------ Procesos (PPCSA): ------------------------\n";
             resutl += maxHeap.ToStr();
 
             return resutl;

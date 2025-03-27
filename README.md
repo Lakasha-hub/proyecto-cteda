@@ -1,3 +1,5 @@
+## ⏱️ Simulador de Estrategias de Planificación CPU | Desktop App (C#)
+
 🚀 Aplicación de escritorio para simulación de algoritmos de planificación de CPU. Incluye:  
 
 - **Implementación detallada** de FCFS, SJF y Round Robin  
